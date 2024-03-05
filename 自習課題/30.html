@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+     </style> 
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="itemA">要素A</div>
+            <div class="itemB">要素B</div>
+            <div class="itemC">要素C</div>
+            <div class="itemD">要素D</div>
+            </div>
+            
+
+        <style>
+          .container {
+    border: 2px solid #F76707;
+    border-radius: 5px;
+    background-color: #FFF4E6;
+    display: grid;
+      grid-template-rows: 100px 1fr 50px; 
+      grid-template-columns: 150px 200px 1fr;
+      grid-gap: 10px; 
+      grid-template-areas:
+        "itemA itemB itemD"
+        "itemA itemB itemD"
+        "itemA itemC itemD";
+    }
+    .itemA {
+    grid-area: itemA;
+    background: #F8BBD0;
+    }
+    .itemB {
+    grid-area: itemB;
+    background: #C5CAE9;
+    }
+    .itemC {
+    grid-area: itemC;
+    background: #B3E5FC;
+    }
+    .itemD {
+    grid-area: itemD;
+    background: #C8E6C9;
+    }
+        </style>
+    </body>
+</html>

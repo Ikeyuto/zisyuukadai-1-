@@ -1,0 +1,17 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8F')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  body
+    span 好きな果物:
+    select.selectBox(name='fruit')
+      option(value='apple') りんご
+      option(value='orange') みかん
+      option(value='banana') バナナ
+      option(value='grapes') ぶどう
+      option(value='melon') メロン
+    style.
+      .selectBox{
+      margin-left: 20px;
+      }

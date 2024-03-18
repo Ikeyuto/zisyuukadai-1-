@@ -1,0 +1,46 @@
+doctype html
+html(lang='ja')
+  head
+  body
+    table
+      thead
+        tr.headerRow
+          th 姓
+          th 名
+          th 年齢
+          th Email
+      tbody
+        tr.bodyRow
+          td 佐々木
+          td 太郎
+          td 30
+          td mailto:taro.sasaki@mail.com
+        tr.bodyRow
+          td 田中
+          td 春子
+          td 32
+          td mailto:hanako.tanaka@mail.com
+        tr.bodyRow
+          td 鈴木
+          td 一郎
+          td 42
+          td mailto:suzuki@mail.com
+        tr.bodyRow
+          td 高橋
+          td 夏子
+          td 23
+          td mailto:suzuki@mail.com
+    style.
+      table {
+      border-collapse: collapse;
+      }
+      th,
+      td {
+      border: 1px solid #808080;
+      }
+      .headerRow th {
+      color: #5998CA;
+      }
+      .bodyRow:nth-child(odd) {
+      background-color: #EBFAFC;
+      }

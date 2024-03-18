@@ -1,0 +1,22 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8F')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  body
+    input#apple.checkBox(type='radio' name='fruits')
+    label.fruitLabel(for='apple') りんご
+    input#orange.checkBox(type='radio' name='fruits')
+    label.fruitLabel(for='orange') みかん
+    input#peach.checkBox(type='radio' name='fruits')
+    label.fruitLabel(for='peach') もも
+    style.
+      .checkBox:checked+.fruitLabel{
+      color: #0067C0;
+      font-weight: 600;
+      }
+      .detailBtn:hover {
+      background-color: #FFB514;
+      color: #FFFFFF;
+      cursor: pointer;
+      }
